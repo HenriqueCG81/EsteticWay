@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+img {
+  width: 200px;
+  height: 150px;
+  border-radius: 40%;
+}
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+  border-radius: 40%;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.marginBInst {
+  margin: 100px;
+}
+h1,
+h2,
+h3 {
+  font-family: cursive;
+}
+
+.nav {
+  background: linear-gradient(to right, #ff3366, #663399);
+  margin: 0px 100px 0 100px;
+  align-content: center;
+  justify-content: center;
+  font-family: monospace;
+}
+.center {
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.backcolor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ff3366, #663399);
+  color: #f5f5f5;
+  font-family: monospace;
+}
+
+.center2 {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  width: 1126px;
+}
+.signup {
+  margin-left: 200px;
+  width: 500px;
+}
+.imgLogin {
+  width: 70px;
+  height: 55px;
+  border-radius: 40%;
+}

@@ -1,13 +1,15 @@
-const reportWebVitals = onPerfEntry => {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
-  }
-};
+import { BrowserRouter as Router } from 'react-router-dom'; // <== IMPORT
 
-export default reportWebVitals;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Next, wrap the <App /> with the <Router> and </Router> tags
+
+root.render(
+  <React.StrictMode>
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
+);
+
+reportWebVitals();
