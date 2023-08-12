@@ -1,4 +1,4 @@
-import { useState } from 'react';
+/* import { useState } from 'react'; */
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -9,10 +9,10 @@ import ErrorPage from './components/ErrorPage';
 import Agendamento from './components/Compras';
 import Contato from './components/Contato';
 import { Link } from 'react-router-dom';
-import Login from './components/Login';
-import Signup from './components/Signup';
+/* import Login from './components/Login';
+import Signup from './components/Signup'; */
 const App = () => {
-  const [loginEmail, setLoginEmail] = useState('');
+  /* const [loginEmail, setLoginEmail] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
   const [signupEmail, setSignupEmail] = useState('');
   const [signupPassword, setSignupPassword] = useState('');
@@ -47,7 +47,7 @@ const App = () => {
     // Limpar os campos de signup após o signup ser realizado
     setSignupEmail('');
     setSignupPassword('');
-  };
+  }; */
   return (
     <Router>
       <Navbar />

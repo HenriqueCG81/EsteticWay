@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { set } from 'react-hook-form';
+/* import { set } from 'react-hook-form'; */
 
 const ContactForm = () => {
   const [name, setName] = useState('');
