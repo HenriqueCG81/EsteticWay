@@ -13,11 +13,7 @@ const AboutPage = () => {
             <source src={video} type="video/mp4" />
             Seu navegador não suporta o elemento de vídeo.
           </video>
-          <p>
-            From Old Galician-Portuguese texto, borrowed from Medieval Latin
-            textus (“text”), from Latin textus (“woven”), perfect passive
-            participle of texō (“weave”).
-          </p>
+          <p>MicroAgulhamento</p>
         </div>
         <div className="col-md-6">
           <video controls className="w-100">
