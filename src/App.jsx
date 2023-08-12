@@ -62,12 +62,12 @@ const App = () => {
               <>
                 <Agendamento />
                 <div className="mt-3">
-                  <Link to="/login" className="btn btn-primary corlogin me-2">
-                    Login
+                  <Link to="/contact" className="btn btn-primary corlogin me-2">
+                    Agendamento
                   </Link>
-                  <Link to="/signup" className="btn btn-primary corlogin">
+                  {/*   <Link to="/signup" className="btn btn-primary corlogin">
                     Signup
-                  </Link>
+                  </Link> */}
                 </div>
               </>
             }
