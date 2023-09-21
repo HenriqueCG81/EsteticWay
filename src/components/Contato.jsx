@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-/* import { set } from 'react-hook-form'; */
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -11,6 +10,7 @@ const ContactForm = () => {
   const [selectedDateTime, setSelectedDateTime] = useState(null);
   const [message, setMessage] = useState('');
   const [address, setAddress] = useState('');
+
   const handleNameChange = event => {
     setName(event.target.value);
   };
@@ -26,15 +26,26 @@ const ContactForm = () => {
   const handleDateTimeChange = date => {
     setSelectedDateTime(date);
   };
+
   const handleAddressChange = event => {
     setAddress(event.target.value);
   };
+
   const handleMessageChange = event => {
     setMessage(event.target.value);
   };
 
   const handleSubmit = event => {
     event.preventDefault();
+
+    // Ajusta o horário para a hora local do cliente
+    const adjustedDateTime = selectedDateTime
+      ? new Date(
+          selectedDateTime.setMinutes(
+            selectedDateTime.getMinutes() - selectedDateTime.getTimezoneOffset()
+          )
+        )
+      : null;
 
     // Configuração do serviço de e-mail
     const serviceID = 'service_ijs4w55'; // ID do serviço de e-mail do EmailJS
@@ -46,7 +57,7 @@ const ContactForm = () => {
       from_name: name,
       from_email: email,
       from_phone: phone,
-      from_datetime: selectedDateTime,
+      from_datetime: adjustedDateTime, // Use o horário ajustado
       from_message: message,
       from_address: address
     };
@@ -80,6 +91,9 @@ const ContactForm = () => {
 
   return (
     <div className="backcolor">
+      <div>
+        <p>Agende Ja!</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Nome:</label>
@@ -128,6 +142,7 @@ const ContactForm = () => {
             required
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="message">Serviços</label>
           <input

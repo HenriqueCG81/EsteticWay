@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgba(17, 16, 16, 0.901);
 }
 
 .App-link {
@@ -73,7 +73,7 @@ h3 {
 }
 
 .nav {
-  background: linear-gradient(to right, #ff3366, #663399);
+  background: cornsilk;
   margin: 0px 100px 0 100px;
   align-content: center;
   justify-content: center;
@@ -96,8 +96,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #ff3366, #663399);
-  color: #f5f5f5;
+  background: #f5f5f5;
+  color: #0b0b0bc9;
   font-family: monospace;
 }
 
@@ -129,14 +129,14 @@ body {
 }
 
 .content-container {
-  flex-grow: 1;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #ff3366, #663399);
-  color: #f5f5f5;
-  font-family: monospace;
+  background-color: #f5f5f5; /* Cor de fundo suave, por exemplo, cinza claro */
+  color: #333; /* Cor de texto */
+  font-family: Arial, sans-serif; /* Fonte padrão */
 }
 .foto {
   width: 100px;
