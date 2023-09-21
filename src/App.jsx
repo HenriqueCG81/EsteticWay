@@ -9,45 +9,8 @@ import ErrorPage from './components/ErrorPage';
 import Agendamento from './components/Compras';
 import Contato from './components/Contato';
 import { Link } from 'react-router-dom';
-/* import Login from './components/Login';
-import Signup from './components/Signup'; */
+
 const App = () => {
-  /* const [loginEmail, setLoginEmail] = useState('');
-  const [loginPassword, setLoginPassword] = useState('');
-  const [signupEmail, setSignupEmail] = useState('');
-  const [signupPassword, setSignupPassword] = useState('');
-  const handleLoginEmailChange = e => {
-    setLoginEmail(e.target.value);
-  };
-
-  const handleLoginPasswordChange = e => {
-    setLoginPassword(e.target.value);
-  };
-
-  const handleSignupEmailChange = e => {
-    setSignupEmail(e.target.value);
-  };
-
-  const handleSignupPasswordChange = e => {
-    setSignupPassword(e.target.value);
-  };
-
-  // Funções para realizar o login e o signup
-  const handleLogin = () => {
-    // Lógica de login aqui
-    console.log('Login:', loginEmail, loginPassword);
-    // Limpar os campos de login após o login ser realizado
-    setLoginEmail('');
-    setLoginPassword('');
-  };
-
-  const handleSignup = () => {
-    // Lógica de signup aqui
-    console.log('Signup:', signupEmail, signupPassword);
-    // Limpar os campos de signup após o signup ser realizado
-    setSignupEmail('');
-    setSignupPassword('');
-  }; */
   return (
     <Router>
       <Navbar />
@@ -65,39 +28,12 @@ const App = () => {
                   <Link to="/contact" className="btn btn-primary corlogin me-2">
                     Agendamento
                   </Link>
-                  {/*   <Link to="/signup" className="btn btn-primary corlogin">
-                    Signup
-                  </Link> */}
                 </div>
               </>
             }
           />
           <Route path="/contact" element={<Contato />} />
-          {/*  
-          <Route
-            path="/login"
-            element={
-              <Login
-                email={loginEmail}
-                password={loginPassword}
-                handleEmailChange={handleLoginEmailChange}
-                handlePasswordChange={handleLoginPasswordChange}
-                handleLogin={handleLogin}
-              />
-            }
-          />
-          <Route
-            path="/signup"
-            element={
-              <Signup
-                email={signupEmail}
-                password={signupPassword}
-                handleEmailChange={handleSignupEmailChange}
-                handlePasswordChange={handleSignupPasswordChange}
-                handleSignup={handleSignup}
-              />
-            }
-          /> */}
+
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
       </div>

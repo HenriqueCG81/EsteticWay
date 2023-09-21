@@ -4,9 +4,9 @@ import AppCss from '../App.css';
 class App extends React.Component {
   state = {
     services: [
-      { id: 1, name: 'Micro Agulhamento', price: 80 },
-      { id: 2, name: 'Limpeza de Pele', price: 40 },
-      { id: 3, name: 'Design de Sobrancelhas', price: 25 },
+      { id: 1, name: 'Micro Agulhamento (pack)', price: 80 },
+      { id: 2, name: 'Limpeza de Pele', price: 50 },
+      { id: 3, name: 'Design de Sobrancelhas', price: 15 },
       { id: 4, name: 'Maquilhagem', price: 50 },
       { id: 5, name: 'Extensao de Pestanas', price: 25 }
     ]
@@ -32,7 +32,7 @@ class App extends React.Component {
               {services.map(service => (
                 <tr key={service.id}>
                   <td>{service.name}</td>
-                  <td>R$ {service.price}</td>
+                  <td>€ {service.price}</td>
                 </tr>
               ))}
             </tbody>
@@ -44,7 +44,7 @@ class App extends React.Component {
             rel="noopener noreferrer"
             className="marginBInst"
           >
-            @carolfeitosapt
+            <strong> @carolfeitosapt</strong>
           </a>
         </div>
       </div>
