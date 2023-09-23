@@ -1,6 +1,6 @@
 import React from 'react';
 import AppCss from '../App.css';
-
+import backgroundimage from '../images/back.jpg';
 class App extends React.Component {
   state = {
     services: [
@@ -15,8 +15,16 @@ class App extends React.Component {
   render() {
     const { services } = this.state;
 
+    const backgroundStyle = {
+      backgroundImage: `url(${backgroundimage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      heigth: '100vh'
+    };
+
     return (
-      <div className="App backcolor">
+      <div className="App backcolor" style={backgroundStyle}>
         <div className="background-image"></div>
         <div className="content">
           <h1>Estética App</h1>

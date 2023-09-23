@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-
+import backgroundimage from '../images/back.jpg';
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -11,6 +11,13 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [address, setAddress] = useState('');
 
+  const backgroundStyle = {
+    backgroundImage: `url(${backgroundimage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    heigth: '100vh'
+  };
   const handleNameChange = event => {
     setName(event.target.value);
   };
@@ -90,13 +97,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="backcolor">
+    <div className="backcolor" style={backgroundStyle}>
       <div>
         <p>Agende Ja!</p>
       </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Nome:</label>
+          <label htmlFor="name">
+            <strong>Nome:</strong>
+          </label>
           <input
             type="text"
             id="name"
@@ -107,7 +116,10 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">E-mail:</label>
+          <label htmlFor="email">
+            {' '}
+            <strong>E-mail:</strong>
+          </label>
           <input
             type="email"
             id="email"
@@ -118,7 +130,10 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="phone">Telefone:</label>
+          <label htmlFor="phone">
+            {' '}
+            <strong>Telefone:</strong>
+          </label>
           <input
             type="tel"
             id="phone"
@@ -129,7 +144,10 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="dateTime">Data e Hora do Serviço:</label>
+          <label htmlFor="dateTime">
+            {' '}
+            <strong>Data e Hora do Serviço:</strong>
+          </label>
           <DatePicker
             id="dateTime"
             className="form-control"
@@ -144,7 +162,10 @@ const ContactForm = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Serviços</label>
+          <label htmlFor="message">
+            {' '}
+            <strong>Serviços:</strong>
+          </label>
           <input
             type="text"
             id="message"
@@ -155,7 +176,10 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="address">Endereço</label>
+          <label htmlFor="address" id="color">
+            {' '}
+            <strong>Endereço:</strong>
+          </label>
           <input
             type="text"
             id="address"
