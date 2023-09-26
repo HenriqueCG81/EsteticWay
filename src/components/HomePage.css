@@ -31,3 +31,26 @@
 .color {
   color: black;
 }
+.apresentacao {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.agendar-button {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remova a borda do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Mude o cursor ao passar o mouse */
+  text-decoration: none; /* Remova sublinhado */
+  transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+}
+
+.agendar-button:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}

@@ -23,16 +23,9 @@ const ProjectsPage = props => {
             <Card.Body>
               <Card.Title>Design de Sobrancelhas</Card.Title>
               <Card.Text>
-                Convido-vos a conhecer a paixão pelo meu trabalho, o mundo da
-                estética facial. Focada nos meus objetivos e nas expectativas,
-                procuro dar vida a cada olhar ao desenhar as mais belas e
-                delicadas sobrancelhas. Adquiri a minha experiência no Brasil e
-                no Dubai, onde passei os últimos anos a aperfeiçoar esta área da
-                estética. Agora, em Portugal, ponho em prática o meu
-                conhecimento em Microblading, Design de Sobrancelhas com ou sem
-                Henna e Threading, partilhando convosco parte do meu portefólio
-                de resultados. Foco, perfeccionismo e sentido estético é o que
-                me define. Caroline Feirtosa Chaves Especialista em Sobrancelhas
+                Esta técnica é perfeita pra você que quer estar com o olhar mais
+                bonito e harmonioso. Este tratamento inclui as técnicas com
+                pinça, linha e henna.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -41,15 +34,20 @@ const ProjectsPage = props => {
             <Card.Body>
               <Card.Title>Extensão de Pestanas</Card.Title>
               <Card.Text>
-                O serviço de beleza de referência comigo, com resultados
-                imediatos e que vão destacar os seus olhos e realçar a sua
-                beleza e sensualidade. A extensão de pestanas é uma técnica que
-                consiste na aplicação de filamentos sintéticos em seda, com
-                comprimentos, espessuras e curvaturas diferentes, sobre a sua
-                pestana. É um método que permite intensificar o seu olhar,
-                tornando-o mais aberto, intenso e sedutor. Por esse motivo, é
-                ideal para quem tem poucos fios de pestana ou umas pestanas
-                curtas, e também para quem tem a pálpebra descaída.
+                Extensão de pestanas com volume clássico: Este tratamento
+                envolve a aplicação de um cílio de alta qualidade em um cílio
+                natural, dando-lhes leve volume e comprimento. Com base no
+                formato e preferência do seu olho, criarei um visual exclusivo
+                pra você. Extensão de pestanas com volume natural (híbrido):
+                Este tratamento exclusivo combina o melhor dos dois mundos!
+                Combina pestanas clássica e volumosas proporcionando um
+                acabamento natural com um toque de volume. Aplicaremos uma
+                combinação de 1 a 3 pestanas de alta qualidade em um fio
+                natural. Extensão de pestanas com volume russo Essa técnica é
+                ideal para pessoas que desejam um efeito mais volumoso e
+                dramático, mas ainda assim natural. Neste tratamento aplicamos
+                4, 5 e 6 pestanas de alta qualidade em uma pestana natural,
+                dando mega volume aos seus cílios.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -58,27 +56,36 @@ const ProjectsPage = props => {
             <Card.Body>
               <Card.Title>Micro Agulhamento</Card.Title>
               <Card.Text>
-                O Microagulhamento ou microneedling é um tratamento eficaz e
-                seguro com excelentes resultados para quem quer retardar o
-                envelhecimento da pele. É um método de rejuvenescimento em que a
-                finalidade é estimular a produção de novas fibras de colagénio e
-                elastina. É um dos tratamentos estéticos mais utilizados
-                atualmente para renovar a beleza da pele do rosto.
+                Esse é um dos melhores procedimentos para a sua pele. Este
+                tratamento consiste em fazer micro furos na pele para estimular
+                a função dos fibroblastos, as células responsáveis por produzir
+                colágeno, de forma a promover a restauração da pele. O que
+                nomeamos "Drug delivery" nada mais é que a entrega de ativos que
+                se usa durante o procedimento de microagulhamento. Esses ativos
+                podem variar de acordo com o objetivo do tratamento, podendo
+                incluir vitaminas, ácido hialurônico, fatores de crescimento,
+                entre outros. O microagulhamento com drug delivery é indicado
+                para tratamentos de rejuvenescimento facial, redução de
+                cicatrizes de acne, melasma entre outros.
               </Card.Text>
             </Card.Body>
           </Card>
           <Card>
             <Card.Img variant="top" src={image4} />
             <Card.Body>
-              <Card.Title>Limpeza de Pele Profunda</Card.Title>
+              <Card.Title>Limpeza de pele com peeling de diamante.</Card.Title>
               <Card.Text>
-                A Limpeza de Pele Profunda é um cuidado completo de beleza para
-                o seu rosto, com resultado imediato após o tratamento. Se tem
-                áreas críticas no rosto, com pontos negros (comedons),
-                sujidade/oleosidade e sente que o rosto está baço e sem vida, a
-                Limpeza Profunda é a mais indicada para o seu caso! Com duração
-                prolongada, esse tratamento minucioso trará luz e vitalidade
-                para o seu rosto, experimente!
+                Me consulte para que eu possa te oferecer um tratamento facial
+                personalizado com duração de 1h/00/ 1h30 para cada condição de
+                pele. Esse tratamento não consiste apenas em uma limpeza de pele
+                profunda, mas também em recuperar e hidratar a sua pele. O
+                peeling de diamante é um procedimento minimamente invasivo usado
+                para recuperar o tom e a textura geral da pele. Durante o
+                procedimento, a ponteira de diamante é passada sobre a pele,
+                criando uma sucção que ajuda a remover as células mortas e
+                impurezas. A limpeza de pele associada ao peeling de diamante é
+                ideal para peles com acne, cicatrizes, manchas, rugas finas e
+                linhas de expressão.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -87,24 +94,14 @@ const ProjectsPage = props => {
             <Card.Body>
               <Card.Title>Maquilhagem</Card.Title>
               <Card.Text>
-                Olá, meu nome é Ana Caroline Feitosa e sou uma maquiadora
-                apaixonada pelo meu trabalho. Ao longo dos anos, adquiri uma
-                experiência valiosa e aprimorei minhas habilidades, tornando-me
-                uma profissional altamente qualificada e reconhecida no ramo da
-                maquiagem. Desde a minha infância, a maquiagem despertou em mim
-                uma paixão e uma criatividade inigualáveis. Lembro-me de passar
-                horas diante do espelho, experimentando diferentes cores,
-                texturas e estilos. Foi nesse momento que percebi que a
-                maquiagem era muito mais do que um simples toque estético, era
-                uma forma de arte que podia transformar não apenas a aparência
-                das pessoas, mas também sua autoestima e confiança. Busquei
-                constantemente aprimorar minhas habilidades, participando de
-                cursos e treinamentos em instituições renomadas. Com cada novo
-                conhecimento adquirido, minha paixão pela maquiagem crescia
-                ainda mais. Essa busca incessante pela excelência me ajudou a
-                desenvolver uma visão apurada para as últimas tendências e
-                técnicas, permitindo que eu ofereça serviços de qualidade e
-                esteja sempre atualizada no mundo da beleza.
+                Ofereço serviços profissionais de maquilhagem para eventos
+                especiais, como casamentos, formaturas, festas e muito mais.
+                Além da minha formação em estética e cosmética, participei de
+                vários cursos como MakeUp Atelier Paris e Kryolan em Dubai e
+                estou sempre buscando melhorar minhas técnicas para sempre
+                oferecer o melhor. Entre em contato comigo e agende uma consulta
+                para descobrir como posso ajudá-la a ficar ainda mais bonita e
+                confiante para o seu próximo evento ou book de fotos.
               </Card.Text>
             </Card.Body>
           </Card>
