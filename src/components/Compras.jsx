@@ -4,11 +4,11 @@ import backgroundimage from '../images/back.jpg';
 class App extends React.Component {
   state = {
     services: [
-      { id: 1, name: 'Micro Agulhamento (pack)', price: 80 },
+      { id: 1, name: 'Micro Agulhamento', price: 50 },
       { id: 2, name: 'Limpeza de Pele', price: 50 },
       { id: 3, name: 'Design de Sobrancelhas', price: 15 },
       { id: 4, name: 'Maquilhagem', price: 50 },
-      { id: 5, name: 'Extensao de Pestanas', price: 25 }
+      { id: 5, name: 'Extensao de Pestanas', price: 30 }
     ]
   };
 
@@ -32,7 +32,7 @@ class App extends React.Component {
           <table className="ui celled table">
             <thead>
               <tr>
-                <th>Serviço</th>
+                <th>Serviço/</th>
                 <th>Preço</th>
               </tr>
             </thead>
