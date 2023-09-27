@@ -7,7 +7,7 @@ import image2 from '../images/photo2.jpg';
 import image3 from '../images/foto3.jpg';
 import Carol from '../images/carol.jpg';
 import './HomePage.css'; // Importe seu arquivo CSS
-import ContactForm from './Contato';
+
 import { NavLink } from 'react-router-dom';
 
 const HomePage = () => {

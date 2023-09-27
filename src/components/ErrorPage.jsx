@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import BackButton from './BackButton';
 const ErrorPage = () => {
   return (
