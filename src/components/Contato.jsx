@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import backgroundimage from '../images/back.jpg';
+import backgroundimage from '../images/carol.jpg';
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

@@ -1,6 +1,6 @@
 import React from 'react';
 import AppCss from '../App.css';
-import backgroundimage from '../images/back.jpg';
+import backgroundimage from '../images/carol.jpg';
 class App extends React.Component {
   state = {
     services: [
