@@ -15,8 +15,7 @@
   color: black;
   font-size: 24px;
   margin-top: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .backcolor {
   min-height: 100vh;
@@ -36,8 +35,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .agendar-button {
   background-color: #007bff; /* Cor de fundo do botão */

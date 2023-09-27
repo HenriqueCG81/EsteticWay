@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
@@ -9,9 +9,16 @@ import Carol from '../images/carol.jpg';
 import './HomePage.css'; // Importe seu arquivo CSS
 import ContactForm from './Contato';
 import { NavLink } from 'react-router-dom';
+
 const HomePage = () => {
   const location = useLocation();
   const showBackButton = location.pathname !== '/';
+  const [showAboutMe, setShowAboutMe] = useState(false);
+
+  const toggleAboutMe = () => {
+    setShowAboutMe(!showAboutMe);
+  };
+
   return (
     <div className="backcolor">
       <h4 className="center color">
@@ -22,25 +29,33 @@ const HomePage = () => {
       <div className="profile">
         <img src={Carol} alt="Carol" className="foto" />
         <h1 id="nome">Carol Feitosa</h1>
-        <p id="apresentacao">
-          Olá, meu nome é Ana Caroline Feitosa e sou uma Esteticista Facial
-          apaixonada pelo meu trabalho. Ao longo dos anos, adquiri uma
-          experiência valiosa e aprimorei minhas habilidades, tornando-me uma
-          profissional altamente qualificada e reconhecida no ramo da Estetica
-          Facial. Desde a minha infância, a Estetica despertou em mim uma paixão
-          e uma criatividade inigualáveis. Lembro-me de passar horas diante do
-          espelho, experimentando diferentes cores, texturas e estilos. Foi
-          nesse momento que percebi que a estetica era muito mais do que um
-          simples toque estético, era uma forma de arte que podia transformar
-          não apenas a aparência das pessoas, mas também sua autoestima e
-          confiança. Busquei constantemente aprimorar minhas habilidades,
-          participando de cursos e treinamentos em instituições renomadas. Com
-          cada novo conhecimento adquirido, minha paixão pela estetica crescia
-          ainda mais. Essa busca incessante pela excelência me ajudou a
-          desenvolver uma visão apurada para as últimas tendências e técnicas,
-          permitindo que eu ofereça serviços de qualidade e esteja sempre
-          atualizada no mundo da beleza.
-        </p>
+        <button onClick={toggleAboutMe} className="about-me-button">
+          About Me
+        </button>
+        {showAboutMe && (
+          <div className="about-me-text">
+            <p>
+              Olá, meu nome é Ana Caroline Feitosa e sou uma Esteticista Facial
+              apaixonada pelo meu trabalho. Ao longo dos anos, adquiri uma
+              experiência valiosa e aprimorei minhas habilidades, tornando-me
+              uma profissional altamente qualificada e reconhecida no ramo da
+              Estetica Facial. Desde a minha infância, a Estetica despertou em
+              mim uma paixão e uma criatividade inigualáveis. Lembro-me de
+              passar horas diante do espelho, experimentando diferentes cores,
+              texturas e estilos. Foi nesse momento que percebi que a estetica
+              era muito mais do que um simples toque estético, era uma forma de
+              arte que podia transformar não apenas a aparência das pessoas, mas
+              também sua autoestima e confiança. Busquei constantemente
+              aprimorar minhas habilidades, participando de cursos e
+              treinamentos em instituições renomadas. Com cada novo conhecimento
+              adquirido, minha paixão pela estetica crescia ainda mais. Essa
+              busca incessante pela excelência me ajudou a desenvolver uma visão
+              apurada para as últimas tendências e técnicas, permitindo que eu
+              ofereça serviços de qualidade e esteja sempre atualizada no mundo
+              da beleza.
+            </p>
+          </div>
+        )}
       </div>
       <CardGroup>
         <Card>

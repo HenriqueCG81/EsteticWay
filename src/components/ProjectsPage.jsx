@@ -5,7 +5,7 @@ import image2 from '../images/photo2.jpg';
 import image3 from '../images/foto3.jpg';
 import image4 from '../images/photo4.jpg';
 import image5 from '../images/photo5.jpg';
-
+import './ProjectsPage.css';
 const ProjectsPage = props => {
   const [projects, setProjects] = useState([]);
 
@@ -14,7 +14,7 @@ const ProjectsPage = props => {
   }, [props.projects]);
 
   return (
-    <div className="backcolor">
+    <div className="backcolor" id="color">
       <h1 className="text-center text-dark">Estética</h1>
       <div className="container">
         <Carousel>
