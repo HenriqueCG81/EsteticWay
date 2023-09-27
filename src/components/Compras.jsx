@@ -27,7 +27,6 @@ class App extends React.Component {
       <div className="App backcolor" style={backgroundStyle}>
         <div className="background-image"></div>
         <div className="content">
-          <h1>Estética App</h1>
           <h2>Tabela de Preços:</h2>
           <table className="ui celled table">
             <thead>
