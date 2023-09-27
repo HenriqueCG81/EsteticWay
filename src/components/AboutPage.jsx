@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../images/1086710408-preview.mp4';
+import video from '../images/video1.mp4';
 import video2 from '../images/video2.mp4';
 import video3 from '../images/video3.mp4';
 import video4 from '../images/video4.mp4';
